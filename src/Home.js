@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/landing.scss'
-import { MdEmail } from 'react-icons/md'
+import { MdEmail, MdDownload } from 'react-icons/md'
 import { AiFillFolder } from 'react-icons/ai'
 
 export default function Home() {
@@ -30,7 +30,10 @@ export default function Home() {
           <p className='buttons-value'>Reach me</p>
         </div>
         <div className='landing-buttons resume'>
-          <AiFillFolder/>
+          <ul className='dynamic-icons'>
+            <li><AiFillFolder className='buttons-icon'/></li>
+            <li><MdDownload className='buttons-icon'/></li>
+          </ul>
           <p className='buttons-value'>My Resume</p>
         </div>
       </div>
