@@ -107,6 +107,8 @@
     .reachme {
       background-color: $main-button;
       font-weight: 600;
+      transition-duration: 1s;
+      transition-property: all;
     }
     .reachme:hover{
       @extend %button-hover;
