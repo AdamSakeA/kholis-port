@@ -27,6 +27,7 @@
   }
   .landing-container {
     text-align: center;
+    cursor: default;
     .landing-hello {
       font-family: $body-font;
       font-weight: 500;
@@ -87,6 +88,8 @@
       font-size: 16px;
       font-weight: 400;
       color: $body-text;
+      line-height: 24px;
+      letter-spacing: 0.015em;
     }
   }
   .landing-buttons-container {
@@ -99,11 +102,12 @@
       justify-content: center;
       gap: 5px;
       border-radius: 5px;
-      padding: 10px 25px;
+      padding: 10px 30px;
       color: $header-text;
       font-family: $body-font;
       font-size: 16px;
       letter-spacing: 0.007em;
+      cursor: pointer;
       .dynamic-icons {
         height: 20px;
         overflow: hidden;
@@ -130,9 +134,11 @@
       transition-duration: 1s;
       transition-property: all;
       font-weight: 400;
+      border: 1px solid white;
     }
     .resume:hover {
       color: $hover-button;
+      border: 1px solid $hover-button;
       .dynamic-icons {
         li {
           animation: sliding 1s forwards;
@@ -147,5 +153,100 @@
         bottom: 24px;
       }
     }
+  }
+}
+.vector-bottom {
+  position: absolute;
+  width: 600px;
+  height: 1505px;
+  right: 0px;
+  top: 800px;
+  .bg-vector-bottom {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(180deg, rgba(37, 181, 201, 0.37) 0%, rgba(27, 44, 47, 0) 100%);
+    filter: blur(132px);
+  }
+}
+.landing-bottom {
+  padding: {
+    top: 300px;
+  }
+  z-index: 1;
+  .pict-landing-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    .landing-bottom-left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .landing-bottom-right {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .landing-bottom-right-bottom {
+        display: flex;
+        gap: 40px;
+      }
+    }
+  }
+}
+.landing-aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 400px;
+  .polygon-1 {
+    position: absolute;
+    width: 232px;
+    height: 232px;
+    left: 20px;
+    top: 2250px;
+    animation: slider 3s infinite;
+    .component-polygon1{
+      box-sizing: border-box;
+      position: absolute;
+      width: 110.48px;
+      height: 110.48px;
+      left: 61px;
+      top: 61px;
+      transform: rotate(15deg);
+      border: 1px solid #288E9C;
+    }
+  }
+  .title-aboutme {
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 34px;
+    color: $header-text;
+    margin-bottom: 30px;
+    letter-spacing: 0.005em;
+  }
+  .desc-aboutme {
+    font-family: $body-font;
+    font-weight: 400;
+    color: $body-text;
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    line-height: 24px;
+  }
+}
+@keyframes slider {
+  0% {
+    top: 2250px;
+  }
+  50% {
+    top: 2280px;
+  }
+  100% {
+    top: 2250px;
   }
 }
