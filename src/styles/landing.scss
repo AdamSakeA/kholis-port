@@ -185,6 +185,16 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
+      .porto1-left {
+        background-color: rgba(245, 208, 208, 1);
+        width: 360px;
+        height: 340px;
+      }
+      .porto2-left {
+        background-color: rgba(245, 208, 208, 1);
+        width: 360px;
+        height: 470px;
+      }
     }
     .landing-bottom-right {
       display: flex;
@@ -193,6 +203,16 @@
       .landing-bottom-right-bottom {
         display: flex;
         gap: 40px;
+        .porto1-right {
+          background-color: rgba(245, 208, 208, 1);
+          width: 760px;
+          height: 526px;
+        }
+        .porto2-right {
+          background-color: rgba(245, 208, 208, 1);
+          width: 360px;
+          height: 280px;
+        }
       }
     }
   }

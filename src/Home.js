@@ -40,14 +40,14 @@ export default function Home() {
       <div className='landing-bottom'>
         <div className='pict-landing-bottom'>
           <div className='landing-bottom-left'>
-            <img src="https:/fakeimg.pl/360x340/" alt='' className='porto'/>
-            <img src="https:/fakeimg.pl/360x470/" alt='' className='porto'/>
+            <img src="https:/fakeimg.pl/360x340/" alt='' className='porto1-left'/>
+            <img src="https:/fakeimg.pl/360x470/" alt='' className='porto2-left'/>
           </div>
           <div className='landing-bottom-right'>
-            <img src="https:/fakeimg.pl/760x526/" alt="" className='porto' />
+            <img src="https:/fakeimg.pl/760x526/" alt="" className='porto1-right' />
             <div className='landing-bottom-right-bottom'>
-              <img src="https:/fakeimg.pl/360x280/" alt="" className='porto' />
-              <img src="https:/fakeimg.pl/360x280/" alt="" className='porto' />
+              <img src="https:/fakeimg.pl/360x280/" alt="" className='porto2-right' />
+              <img src="https:/fakeimg.pl/360x280/" alt="" className='porto2-right' />
             </div>
           </div>
         </div>
