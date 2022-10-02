@@ -1,0 +1,83 @@
+@import './root.scss';
+
+.white {
+  background-color: #DDE4E3;
+}
+
+.darkblue {
+  background-color: #203356;
+}
+
+.blueocean{
+  background-color: #3A6D89;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 180px;
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    .project-left {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .dates {
+        font-family: $body-font;
+        letter-spacing: 0.015em;
+        .date-title {
+          font-weight: 600;
+          font-size: 16px;
+          color: #171717;
+          margin-bottom: 4px;
+        }
+        .date-desc {
+          font-weight: 400;
+          font-size: 16px;
+          color: #414243;
+        }
+      }
+      .project-profile {
+        font-family: $body-font;
+        .project-title {
+          font-weight: 700;
+          font-size: 34px;
+          line-height: 43px;
+          letter-spacing: 0.005em;
+          color: #171717;
+          margin-bottom: 20px;
+        }
+        .project-desc {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.015em;
+          color: #414243;
+        }
+      }
+    }
+    .project-right {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      .project-tools {
+        font-family: $body-font;
+        letter-spacing: 0.015em;
+        .tools-title {
+          font-weight: 600;
+          font-size: 16px;
+          margin-bottom: 5px;
+          color: #171717;
+        }
+        .tools-desc {
+          font-weight: 400;
+          font-size: 16px;
+          color: #414243;
+        }
+      }
+    }
+  }
+}

@@ -229,7 +229,7 @@
     width: 232px;
     height: 232px;
     left: 20px;
-    top: 2250px;
+    top: 2320px;
     animation: slider 3s infinite;
     .component-polygon1{
       box-sizing: border-box;
@@ -240,6 +240,24 @@
       top: 61px;
       transform: rotate(15deg);
       border: 1px solid #288E9C;
+    }
+  }
+  .polygon-2 {
+    position: absolute;
+    width: 232px;
+    height: 232px;
+    left: 1101px;
+    top: 1900px;
+    animation: slider2 3s infinite;
+    .component-polygon2 {
+      box-sizing: border-box;
+      position: absolute;
+      width: 103.7px;
+      height: 111.56px;
+      left: 64px;
+      top: 60px;
+      border: 1px solid #288E9C;
+      transform: rotate(40deg);
     }
   }
   .title-aboutme {
@@ -259,14 +277,26 @@
     line-height: 24px;
   }
 }
+
 @keyframes slider {
   0% {
-    top: 2250px;
+    top: 2320px;
   }
   50% {
-    top: 2280px;
+    top: 2350px;
   }
   100% {
-    top: 2250px;
+    top: 2320px;
+  }
+}
+@keyframes slider2 {
+  0% {
+    top: 1900px;
+  }
+  50% {
+    top: 1930px;
+  }
+  100% {
+    top: 1900px;
   }
 }

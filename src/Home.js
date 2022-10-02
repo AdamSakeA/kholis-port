@@ -56,6 +56,9 @@ export default function Home() {
         <div className='polygon-1'>
           <div className='component-polygon1'></div>
         </div>
+        <div className='polygon-2'>
+          <div className='component-polygon2'></div>
+        </div>
         <h1 className='title-aboutme'>About me</h1>
         <p className='desc-aboutme'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat felis, aenean risus. Molestie dictumst tortor cum<br></br> bibendum lobortis tempor. Duis nisi amet, enim adipiscing porttitor amet, rutrum enim platea. Vitae eget sit suscipit sit neque<br></br> non condimentum quis. Pellentesque ipsum quis at purus pretium in vel in. Aenean luctus turpis nisi, et, neque, faucibus<br></br> sodales. Posuere risus semper erat cursus luctus nec gravida netus. Nulla venenatis, ac at urna, mi faucibus interdum nascetur.<br></br> Egestas rhoncus tristique ut etiam cursus augue malesuada. Nibh purus tempus luctus tempor. Nec ipsum ullamcorper et<br></br> nulla id integer. Fringilla sodales fusce non nunc nunc amet, ac at.</p>
       </div>
