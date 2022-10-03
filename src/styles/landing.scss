@@ -9,6 +9,9 @@
     top: 230px;
     bottom: 250px;
   }
+  .home-icons {
+    display: none;
+  }
   .vector {
     position: absolute;
     width: 676.12px;
@@ -38,49 +41,15 @@
     .landing-title {
       display: flex;
       align-items: center;
-      gap: 20px;
+      text-align: center;
+      justify-content: center;
+      gap: 10px;
       margin-bottom: 20px;
       color: $header-text;
-      h1, .dynamic-title {
+      h1 {
         font-family: $landing-font;
         font-size: 64px;
         font-weight: 700;
-      }
-      .dynamic-texts {
-        height: 90px;
-        overflow: hidden;
-        li {
-          position: relative;
-          top: 0;
-          animation: slide 12s steps(4) infinite;
-        }
-        .dynamic-title {
-          position: relative;
-          line-height: 90px;
-        }
-        .dynamic-title::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background: $background;
-          border-left: 1px solid #fff;
-          animation: typing 5s steps(12) infinite;
-        }
-      }
-      @keyframes slide {
-        100%{
-          top: -360px;
-        }
-      }
-      @keyframes typing {
-        40%, 60% {
-          left: calc(100% + 30px);
-        }
-        100% {
-          left: 0;
-        }
       }
     }
     .desc-landing {
@@ -90,6 +59,7 @@
       color: $body-text;
       line-height: 24px;
       letter-spacing: 0.015em;
+      max-width: 771px; 
     }
   }
   .landing-buttons-container {
@@ -176,6 +146,9 @@
     top: 300px;
   }
   z-index: 1;
+  .pict-landing-slider {
+    display: none;
+  }
   .pict-landing-bottom {
     display: flex;
     justify-content: center;
@@ -238,8 +211,8 @@
       height: 110.48px;
       left: 61px;
       top: 61px;
-      transform: rotate(15deg);
       border: 1px solid #288E9C;
+      @include rotate(rotate(15deg));
     }
   }
   .polygon-2 {
@@ -257,7 +230,7 @@
       left: 64px;
       top: 60px;
       border: 1px solid #288E9C;
-      transform: rotate(40deg);
+      @include rotate(rotate(40deg));
     }
   }
   .title-aboutme {
@@ -275,6 +248,7 @@
     font-size: 16px;
     letter-spacing: 0.015em;
     line-height: 24px;
+    max-width: 968px;
   }
 }
 
@@ -298,5 +272,94 @@
   }
   100% {
     top: 1900px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .landing {
+    .home-icons {
+      display: flex;
+      color: $body-text;
+      margin-top: 50px;
+      font-size: 24px;
+      gap: 30px;
+    }
+    .landing-container {
+      .landing-hello {
+        font-weight: 400;
+        font-size: 13px;
+      }
+      .landing-title {
+        h1 {
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+      .desc-landing {
+        font-family: $body-font;
+        font-size: 14px;
+        font-weight: 400;
+        color: $body-text;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        max-width: 343px;
+      }
+    }
+    .landing-buttons-container {
+      flex-direction: column;
+      margin-top: 50px;
+      gap: 20px;
+      .landing-buttons {
+        padding: 10px 20px;
+        font-size: 14px;
+        letter-spacing: 0.001em;
+      }
+    }
+  }
+  .landing-bottom {
+    padding: {
+      top: 60px;
+    }
+    z-index: 1;
+    .pict-landing-slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .porto1-left {
+        width: 276px;
+        height: 260.62px;
+        background: $header-text;
+      }
+      .porto2-left {
+        width: 276px;
+        height: 260.62px;
+        background: $header-text;
+      }
+    }
+    .pict-landing-bottom {
+      display: none;
+    }
+  }
+  .landing-aboutme {
+    margin-top: 100px;
+    .polygon-1 {
+      display: none;
+    }
+    .polygon-2 {
+      display: none;
+    }
+    .title-aboutme {
+      font-size: 16px;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+      line-height: 19px;
+    }
+    .desc-aboutme {
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      line-height: 20px;
+      max-width: 350px;
+    }
   }
 }

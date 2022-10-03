@@ -30,3 +30,44 @@ $landing-font: 'Work Sans', sans-serif;
 .container {
   padding: 16px 80px;
 }
+
+@mixin rotate($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .landing {
+    padding: {
+      top: 50px;
+      bottom: 50px;
+      left: 20px;
+      right: 20px;
+    };
+    .vector {
+      width: 126.36px;
+      height: 131.24px;
+      left: -39px;
+      top: 48px;      
+      .bg-vector {
+        background: linear-gradient(180deg, rgba(37, 181, 201, 0.37) 0%, rgba(27, 44, 47, 0) 100%);
+        filter: blur(24.6697px);
+      }
+    }
+  }
+  .vector-bottom {
+    width: 200px;
+    height: 600px;
+    right: 0;
+    top: 450px;
+    .bg-vector-bottom {
+      background: linear-gradient(180deg, rgba(37, 181, 201, 0.37) 0%, rgba(27, 44, 47, 0) 100%);
+      filter: blur(35.6639px);
+    }
+  }
+}
+

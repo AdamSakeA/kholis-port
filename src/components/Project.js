@@ -15,6 +15,9 @@ export default function Project(props) {
             <p className='project-desc'>{props.projectDesc}</p>
           </div>
         </div>
+        <div className='project-img-container mobile'>
+          <img src="" alt=""/>
+        </div>
         <div className='project-right'>
           <div className='project-tools'>
             <h2 className='tools-title'>{props.tools}</h2>
@@ -30,8 +33,8 @@ export default function Project(props) {
           </div>
         </div>
       </div>
-      <div className='project-img-container'>
-        <img src="https:/fakeimg.pl/760x526/" alt=""/>
+      <div className='project-img-container desktop'>
+        <img src="" alt=""/>
       </div>
     </div>
   )

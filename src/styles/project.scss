@@ -2,14 +2,104 @@
 
 .white {
   background-color: #DDE4E3;
+  .project-container {
+    .project-left {
+      .dates {
+        .date-title {
+          color: #171717;
+        }
+        .date-desc {
+          color: #414243;
+        }
+      }
+      .project-profile {
+        .project-title {
+          color: #171717;
+        }
+        .project-desc {
+          color: #414243;
+        }
+      }
+    }
+    .project-right {
+      .project-tools {
+        .tools-title {
+          color: #171717;
+        }
+        .tools-desc {
+          color: #414243;
+        }
+      }
+    }
+  }
 }
 
 .darkblue {
   background-color: #203356;
+  .project-container {
+    .project-left {
+      .dates {
+        .date-title {
+          color: $header-text;
+        }
+        .date-desc {
+          color: $body-text;
+        }
+      }
+      .project-profile {
+        .project-title {
+          color: $header-text;
+        }
+        .project-desc {
+          color: $body-text;
+        }
+      }
+    }
+    .project-right {
+      .project-tools {
+        .tools-title {
+          color: $header-text;
+        }
+        .tools-desc {
+          color: $body-text;
+        }
+      }
+    }
+  }
 }
 
 .blueocean{
   background-color: #3A6D89;
+  .project-container {
+    .project-left {
+      .dates {
+        .date-title {
+          color: $header-text;
+        }
+        .date-desc {
+          color: $body-text;
+        }
+      }
+      .project-profile {
+        .project-title {
+          color: $header-text;
+        }
+        .project-desc {
+          color: $body-text;
+        }
+      }
+    }
+    .project-right {
+      .project-tools {
+        .tools-title {
+          color: $header-text;
+        }
+        .tools-desc {
+          color: $body-text;
+        }
+      }
+    }
+  }
 }
 
 .project {
@@ -31,13 +121,11 @@
         .date-title {
           font-weight: 600;
           font-size: 16px;
-          color: #171717;
           margin-bottom: 4px;
         }
         .date-desc {
           font-weight: 400;
           font-size: 16px;
-          color: #414243;
         }
       }
       .project-profile {
@@ -47,7 +135,6 @@
           font-size: 34px;
           line-height: 43px;
           letter-spacing: 0.005em;
-          color: #171717;
           margin-bottom: 20px;
         }
         .project-desc {
@@ -55,7 +142,6 @@
           font-size: 16px;
           line-height: 24px;
           letter-spacing: 0.015em;
-          color: #414243;
         }
       }
     }
@@ -70,13 +156,99 @@
           font-weight: 600;
           font-size: 16px;
           margin-bottom: 5px;
-          color: #171717;
         }
         .tools-desc {
           font-weight: 400;
           font-size: 16px;
-          color: #414243;
         }
+      }
+    }
+  }
+  .mobile {
+    display: none;
+  }
+  .project-img-container {
+    img {
+      background-color: antiquewhite;
+      width: 760px;
+      height: 526px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+    padding: 100px 20px;
+    .project-container {
+      flex-direction: column;
+      margin-bottom: 0px;
+      .project-left {
+        width: 100%;
+        .dates {
+          font-family: $body-font;
+          letter-spacing: 0.01em;
+          .date-title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 4px;
+          }
+          .date-desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+        .project-profile {
+          font-family: $body-font;
+          margin-bottom: 50px;
+          .project-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+          }
+          .project-desc {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.01em;
+          }
+        }
+        .project-right {
+          .project-tools {
+            font-family: $body-font;
+            letter-spacing: 0.01em;
+            .tools-title {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;              
+              margin-bottom: 5px;
+            }
+            .tools-desc {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      
+    }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .project-img-container {
+      img {
+        width: 300px;
+        height: 300px;
       }
     }
   }
