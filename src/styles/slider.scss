@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    .img-slider {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+    }
+  }
+}

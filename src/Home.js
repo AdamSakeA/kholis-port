@@ -4,6 +4,7 @@ import { MdEmail, MdDownload } from 'react-icons/md'
 import { AiFillFolder } from 'react-icons/ai'
 import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import Typewriter from 'typewriter-effect'
+import { Carousel } from './components/ImgSlider'
 
 export default function Home() {
   return (
@@ -43,12 +44,13 @@ export default function Home() {
         <FaLinkedin />
         <FaWhatsapp />
       </div>
+        <Carousel />
       <div className='landing-bottom'>
-        <div className='pict-landing-slider'>
-          <img src="https:/fakeimg.pl/360x340/" alt='' className='porto1-left'/>
+        {/* <div className='pict-landing-slider'> */}
+          {/* <img src="https:/fakeimg.pl/360x340/" alt='' className='porto1-left'/>
           <img src="https:/fakeimg.pl/360x470/" alt='' className='porto2-left'/>
-          <img src="https:/fakeimg.pl/360x470/" alt='' className='porto2-left'/>
-        </div>
+          <img src="https:/fakeimg.pl/360x470/" alt='' className='porto2-left'/> */}
+        {/* </div> */}
         <div className='pict-landing-bottom'>
           <div className='landing-bottom-left'>
             <img src="https:/fakeimg.pl/360x340/" alt='' className='porto1-left'/>
