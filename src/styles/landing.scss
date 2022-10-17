@@ -190,6 +190,7 @@
     }
   }
 }
+
 .landing-aboutme {
   display: flex;
   flex-direction: column;
@@ -197,6 +198,15 @@
   justify-content: center;
   text-align: center;
   margin-top: 400px;
+  .landing-bg {
+    position: absolute;
+    background-image: url('./icons/Logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 390px;
+    height: 400px;
+  }
   .polygon-1 {
     position: absolute;
     width: 232px;
@@ -251,6 +261,7 @@
     max-width: 968px;
   }
 }
+
 
 @keyframes slider {
   0% {

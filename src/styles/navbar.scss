@@ -13,6 +13,11 @@
     .navbar-left {
       display: flex;
       gap: 10px;
+      .icon-kholis {
+        background: url('../styles/Vector.png');
+        background-size: cover;
+        width: 20px;
+      }
       .navbar-title {
         font-family: $navbar-font;
         font-size: 16px;

@@ -17,13 +17,12 @@ const createItems = (length, [handleClick]) => {
   return Array.from({ length }).map((item, i) => (
     <div
         data-value={i + 1}
-        className="item"
+        className="item carousel-container"
         onMouseDown={(e) => (deltaX = e.pageX)}
         onMouseUp={(e) => (difference = Math.abs(e.pageX - deltaX))}
         onClick={() => (difference < swipeDelta) && handleClick(i)}
     >
       <div className='img-container'>
-        {/* <h1 style={{color: "white"}}>TEST</h1> */}
         <img src="https:/fakeimg.pl/200x200/" alt='' className='img-slider'/>
         <img src="https:/fakeimg.pl/200x200/" alt='' className='img-slider'/>
       </div>

@@ -7,7 +7,7 @@ export default function Navbar() {
     <div className='navbar'>
       <div className='navbar-container container'>
         <div className='navbar-left'>
-        {/* <img src="../styles/icons/Vector.svg" alt=""/> */}
+          <div className='icon-kholis'></div>
           <h1 className='navbar-title'>Kholis</h1>
         </div>
         <div className='navbar-right'>

@@ -1,43 +1,55 @@
 @import './root.scss';
 
 .footer {
-  padding: {
-    left: 200px;
-    top: 80px;
-    bottom: 80px;
-  };
   background-color: $background;
   font-family: $body-font;
-  .footer-title {
-    color: $header-text;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 25px;
-    letter-spacing: -0.02em;
-    margin-bottom: 20px;
+  .footer-bg {
+    position: absolute;
+    background-image: url('./icons/Logo.png');
+    background-size: cover;
+    width: 390px;
+    height: 280px;
   }
-  .footer-desc {
-    color: $body-text;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.015em;
-    margin-bottom: 30px;
-    span {
+  .footer-contents {
+    padding: {
+      left: 200px;
+      top: 80px;
+      bottom: 80px;
+    };
+    .footer-title {
       color: $header-text;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
     }
-  }
-  .footer-icons {
-    display: flex;
-    gap: 40px;
-    font-size: 25px;
-    color: $body-text;
+    .footer-desc {
+      color: $body-text;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.015em;
+      margin-bottom: 30px;
+      span {
+        color: $header-text;
+      }
+    }
+    .footer-icons {
+      display: flex;
+      gap: 40px;
+      font-size: 25px;
+      color: $body-text;
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .footer {
     padding: 30px;
+    .footer-bg {
+      height: 360px;
+    }
     .footer-title {
       font-weight: 700;
       font-size: 16px;
