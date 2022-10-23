@@ -5,14 +5,35 @@ import { AiFillFolder } from 'react-icons/ai'
 import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import Typewriter from 'typewriter-effect'
 import { Carousel } from './components/ImgSlider'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  AOS.init();
+
+  
   return (
     <>
     <div className='landing'>
       <div className='vector'>
         <div className='bg-vector'></div>
+      </div>/200x200/
+      {/* <div className='polygon-1'
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+      >
+        <div className='component-polygon1'></div>
+      </div> */}
+      {/* <div className='landing-bg'></div> */}
+      {/* <div className='polygon-2'>
+        <div className='component-polygon2'></div>
       </div>
+      <div className='polygon-3'>
+        <div className='component-polygon3'></div>
+      </div> */}
       <div className='landing-container'>
         <p className='landing-hello'>Hello!</p>
         <div className='landing-title'>
@@ -44,9 +65,19 @@ export default function Home() {
         <FaLinkedin />
         <FaWhatsapp />
       </div>
+      <div className='vector-bottom'>
+        <div className='bg-vector-bottom'></div>
+      </div>
       <Carousel />
       <div className='landing-bottom'>
-        <div className='pict-landing-bottom'>
+        <div className='pict-landing-bottom'
+             data-aos="fade-up"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="350"
+             data-aos-once="false"
+             data-aos-anchor-placement="top-center"
+        >
           <div className='landing-bottom-left'>
             <img src="https:/fakeimg.pl/360x340/" alt='' className='porto1-left'/>
             <img src="https:/fakeimg.pl/360x470/" alt='' className='porto2-left'/>
@@ -60,21 +91,42 @@ export default function Home() {
           </div>
         </div>
       </div>
-        <div className='landing-aboutme'>
+      <div className='landing-aboutme'
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+      >
+
+          {/* <div className='polygon-1'>
+            <div className='component-polygon1'></div>
+          </div>
           <div className='landing-bg'></div>
+          <div className='polygon-2'>
+            <div className='component-polygon2'></div>
+          </div> */}
+          <div className='landing-bg'></div>
+          <h1 className='title-aboutme'>About me</h1>
+          <p className='desc-aboutme'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat felis, aenean risus. Molestie dictumst tortor cum bibendum lobortis tempor. Duis nisi amet, enim adipiscing porttitor amet, rutrum enim platea. Vitae eget sit suscipit sit neque non condimentum quis. Pellentesque ipsum quis at purus pretium in vel in. Aenean luctus turpis nisi, et, neque, faucibus sodales. Posuere risus semper erat cursus luctus nec gravida netus. Nulla venenatis, ac at urna, mi faucibus interdum nascetur. Egestas rhoncus tristique ut etiam cursus augue malesuada. Nibh purus tempus luctus tempor. Nec ipsum ullamcorper et nulla id integer. Fringilla sodales fusce non nunc nunc amet, ac at.</p>
+          {/* <div className='polygon-3'>
+            <div className='component-polygon3'></div>
+          </div> */}
+        </div>
+        <div className='polygon-down'
+        >
           <div className='polygon-1'>
             <div className='component-polygon1'></div>
           </div>
           <div className='polygon-2'>
             <div className='component-polygon2'></div>
           </div>
-          <h1 className='title-aboutme'>About me</h1>
-          <p className='desc-aboutme'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat felis, aenean risus. Molestie dictumst tortor cum bibendum lobortis tempor. Duis nisi amet, enim adipiscing porttitor amet, rutrum enim platea. Vitae eget sit suscipit sit neque non condimentum quis. Pellentesque ipsum quis at purus pretium in vel in. Aenean luctus turpis nisi, et, neque, faucibus sodales. Posuere risus semper erat cursus luctus nec gravida netus. Nulla venenatis, ac at urna, mi faucibus interdum nascetur. Egestas rhoncus tristique ut etiam cursus augue malesuada. Nibh purus tempus luctus tempor. Nec ipsum ullamcorper et nulla id integer. Fringilla sodales fusce non nunc nunc amet, ac at.</p>
+          <div className='polygon-3'>
+            <div className='component-polygon3'></div>
+          </div>
         </div>
     </div>
-    <div className='vector-bottom'>
-      <div className='bg-vector-bottom'></div>
-    </div>
+
     </>
   ) 
 }

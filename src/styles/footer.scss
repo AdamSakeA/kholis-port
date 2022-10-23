@@ -46,24 +46,26 @@
 
 @media only screen and (max-width: 600px) {
   .footer {
-    padding: 30px;
     .footer-bg {
-      height: 360px;
+      height: 158px;
     }
-    .footer-title {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
-      letter-spacing: -0.02em;
-    }
-    .footer-desc {
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 15px;
-      letter-spacing: -0.02em;
-    }
-    .footer-icons {
-      display: none;
+    .footer-contents {
+      padding: 30px;
+      .footer-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.02em;
+      }
+      .footer-desc {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: -0.02em;
+      }
+      .footer-icons {
+        display: none;
+      }
     }
   }
 }

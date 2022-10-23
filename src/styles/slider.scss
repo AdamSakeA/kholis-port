@@ -1,8 +1,7 @@
 .item {
   display: none;
-  width: 50%;
+  width: 100%;
   align-items: center;
-  margin-top: 200px;
   .img-container {
     display: flex;
     align-items: center;
@@ -20,5 +19,6 @@
   .item {
     display: flex;
     margin-top: 100px;
+    gap: 30px;
   }
 }
