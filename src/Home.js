@@ -17,7 +17,7 @@ export default function Home() {
     <div className='landing'>
       <div className='vector'>
         <div className='bg-vector'></div>
-      </div>/200x200/
+      </div>
       {/* <div className='polygon-1'
           data-aos="fade-up"
           data-aos-offset="200"
@@ -69,7 +69,7 @@ export default function Home() {
         <div className='bg-vector-bottom'></div>
       </div>
       <Carousel />
-      <div className='landing-bottom'>
+      {/* <div className='landing-bottom'>
         <div className='pict-landing-bottom'
              data-aos="fade-up"
              data-aos-offset="200"
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='landing-aboutme'
           data-aos="fade-up"
           data-aos-offset="200"

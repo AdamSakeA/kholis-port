@@ -31,7 +31,7 @@ const createItems = (length, [handleClick]) => {
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [items] = useState(createItems(6, [setActiveIndex]));
+  const [items] = useState(createItems(5, [setActiveIndex]));
   const syncActiveIndex = ({ item }) => setActiveIndex(item);
 
   return (
@@ -40,8 +40,6 @@ const Carousel = () => {
         disableDotsControls
         disableButtonsControls
         autoPlay
-        paddingLeft={100}
-        paddingRight={100}
         items={items}
         activeIndex={activeIndex}
         responsive={responsive}
