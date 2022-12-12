@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AliceCarousel from 'react-alice-carousel';
-// import 'react-alice-carousel/lib/alice-carousel.css';
+import 'react-alice-carousel/lib/alice-carousel.css';
 import '../styles/slider.scss';
 
 const responsive = {
@@ -15,39 +15,41 @@ const createItems = (length, [handleClick]) => {
   const swipeDelta = 20;
 
   return Array.from({ length }).map((item, i) => (
-    <div
-        data-value={i + 1}
-        className="item carousel-container"
-        onMouseDown={(e) => (deltaX = e.pageX)}
-        onMouseUp={(e) => (difference = Math.abs(e.pageX - deltaX))}
-        onClick={() => (difference < swipeDelta) && handleClick(i)}
-    >
-      <div className='img-container'>
-        <img src='../styles/icons/tettt.jpg' className='img-slider' alt='' width={200} height={200}/>
+      <div
+          data-value={i + 1}
+          className={`item img${i+1}`}
+          onMouseDown={(e) => (deltaX = e.pageX)}
+          onMouseUp={(e) => (difference = Math.abs(e.pageX - deltaX))}
+          onClick={() => (difference < swipeDelta) && handleClick(i)}
+      >
       </div>
-    </div>
   ));
 };
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [items] = useState(createItems(6, [setActiveIndex]));
-  const syncActiveIndex = ({ item }) => setActiveIndex(item);
-
-  return (
-    <AliceCarousel
-        mouseTracking
-        disableDotsControls
-        disableButtonsControls
-        autoPlay
-        paddingLeft={100}
-        paddingRight={100}
-        items={items}
-        activeIndex={activeIndex}
-        responsive={responsive}
-        onSlideChanged={syncActiveIndex}
-    />
-  );
-};
+      const [items] = useState(createItems(10, [setActiveIndex]));
+  
+      const slidePrev = () => setActiveIndex(activeIndex - 1);
+      const slideNext = () => setActiveIndex(activeIndex + 1);
+      const syncActiveIndex = ({ item }) => setActiveIndex(item);
+  
+      return [
+          <div className="b-refs-buttons">
+              <div className='arrow-left' onClick={slidePrev}></div>
+              <p>Slide</p>
+              <div className='arrow-right' onClick={slideNext}></div>
+          </div>,
+          <AliceCarousel
+              mouseTracking
+              disableDotsControls
+              disableButtonsControls
+              items={items}
+              activeIndex={activeIndex}
+              responsive={responsive}
+              onSlideChanged={syncActiveIndex}
+          />
+      ];
+}
 
 export { Carousel };
